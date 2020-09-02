@@ -220,7 +220,7 @@ static NSString *const kMaterialActionSheetBundle = @"MaterialActionSheet.bundle
   [super viewDidLayoutSubviews];
 
   if (self.tableView.contentSize.height > (CGRectGetHeight(self.view.bounds) / 2)) {
-    self.mdc_bottomSheetPresentationController.preferredSheetHeight = [self openingSheetHeight];
+    self.mdc_bottomSheetPresentationController.preferredSheetHeight = 0;
   } else {
     self.mdc_bottomSheetPresentationController.preferredSheetHeight = 0;
   }
